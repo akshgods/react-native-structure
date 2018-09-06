@@ -8,7 +8,7 @@ export default class AuthLoaderScreen extends React.Component {
     }
     checkLogin=async()=>{
         const isLogin=await AsyncStorage.getItem('isLogin');
-        this.props.navigation.navigate(isLogin?'App':'Auth');
+        this.props.navigation.navigate(isLogin ? 'App': 'Auth');
     }
   render() {
     return (

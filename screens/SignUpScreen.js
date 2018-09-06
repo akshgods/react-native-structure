@@ -1,12 +1,28 @@
-import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import React, { Component } from "react";
+import { 
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity
+} from "react-native";
+import BackButton from "../components/BackButton";
 
-export default class SignUpScreen extends Component {
+class SignUpScreen extends Component {
   render() {
     return (
-      <View>
-        <Text> SignUpScreen </Text>
+      <View style={styles.container}>
+   <BackButton />
+        <Text>SignUpScreen</Text>
       </View>
-    )
+    );
   }
 }
+export default SignUpScreen;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  }
+});
